@@ -17,16 +17,16 @@ function main() {
         }
       });
 
-	// affix the navbar after scroll below header
+	
 $('#nav').affix({
       offset: {
         top: $('header').height()
       }
 });	
 
-	// skills chart
+	
 	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
+	
 	var index=0;
 	$(document).scroll(function(){
 		var top = $('#skills').height()-$(window).scrollTop();
@@ -45,19 +45,19 @@ $('#nav').affix({
 			index++;
 		}
 	})
-	//console.log(nagativeValue)
+	
 	});
 	
-	// Hide nav on click
+	
   $(".navbar-nav li a").click(function (event) {
-    // check if window is small enough so dropdown is created
+    
     var toggle = $(".navbar-toggle").is(":visible");
     if (toggle) {
       $(".navbar-collapse").collapse('hide');
     }
   });
 
-  	// Portfolio isotope filter
+  	
     $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
@@ -86,17 +86,17 @@ $('#nav').affix({
     });
 	
 	  	
-    // CounterUp
+    
 	$(document).ready(function( $ ) {
 		if($("span.count").length > 0){	
 			$('span.count').counterUp({
-					delay: 10, // the delay time in ms
-			time: 1500 // the speed time in ms
+					delay: 10, 
+			time: 1500 
 			});
 		}
 	});
 	
-  	// Pretty Photo
+  	
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});	
